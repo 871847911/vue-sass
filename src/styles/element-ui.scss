@@ -1,0 +1,284 @@
+ //to reset element-ui default css
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+.template-form>.form .el-form-item__content{
+  line-height: 1.2;
+}
+.el-input.is-active .el-input__inner, .el-input__inner:focus,.el-textarea__inner:focus{
+  border-color:$theme!important;
+}
+.distpicker-address-wrapper select{
+  margin-right:20px;
+  padding: .5rem .35rem!important;
+  margin-top: 5px;
+}
+.dialog-footer .el-button{
+  color:#fff;
+}
+.cell .el-button--text{
+    color:#fff;
+}
+.el-button--success {
+    color: #fff;
+    background-color: $theme;
+    border-color: $theme;
+}
+.el-switch__label.is-active{
+	color:$theme;
+}
+.el-button--success:focus, .el-button--success:hover {
+    background: $themeHover;
+    border-color: $themeHover;
+    color: #fff;
+}
+/*el-pagination*/
+.el-pagination{
+  float: right;
+  margin-top:26px;
+}
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{
+  background:rgba(255,255,255,1);
+  border-radius:4px;
+  border:1px solid rgba(217,217,217,1);
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background:$theme;
+  color: #FFFFFF;
+}
+.el-pagination.is-background .el-pager li:not(.disabled):hover{
+  color:#606266;
+}
+.el-pagination__sizes .el-input .el-input__inner:hover{
+  border-color:$theme;
+}
+/*radio*/
+.el-radio__inner{
+  width: 24px;
+  height: 24px;
+}
+.el-radio__input.is-checked .el-radio__inner{
+  border:1px solid rgba(174,184,190,1);
+  background-color: #FFFFFF;
+}
+.el-radio__inner::after{
+  width: 12px;
+  height: 12px;
+  background:$theme;
+}
+.el-radio__inner:hover{
+  border:1px solid rgba(174,184,190,1);
+}
+.el-radio__input.is-checked+.el-radio__label{
+  color: rgba(74, 74, 74, 1);
+}
+/*table*/
+.el-table .el-table__header-wrapper th{
+  background:rgba(249,250,249,1);
+  color:rgba(74, 74, 74, 1);
+}
+.el-table__body-wrapper .cell{
+  color:rgba(155,155,155,1);
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+
+/*btn*/
+.el-button--text-preview{
+  display: inline-block;
+  font-size: 12px;
+  padding:5px 12px;
+  line-height: 18px;
+  background-color: rgba(26, 169, 123, 0.5)!important;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.el-button--text-login{
+  display: inline-block;
+  font-size: 12px;
+  padding:5px 12px;
+  color:#4A90E2!important;
+  border-radius: 3px;
+  line-height: 18px;
+  border: 1px solid;
+  border-color: transparent;
+  background-color: rgba(74,144,226, 0.5)!important;
+  vertical-align: middle;
+}
+.el-select .el-input.is-focus .el-input__inner{
+  border-color:$theme!important;
+}
+.el-select .el-input__inner:focus{
+  border-color:$theme!important;
+}
+.el-select-dropdown__item.selected{
+  color:$theme;
+}
+/*el-menu*/
+.is-opened .el-submenu__icon-arrow{
+  color: $theme!important;
+}
+.el-submenu.is-opened>.el-submenu__title .el-submenu__icon-arrow{
+  -webkit-transform: rotateZ(-90deg);
+  transform: rotateZ(-90deg);
+}
+#app .sidebar-container .nest-menu .el-submenu > .el-submenu__title, #app .sidebar-container .el-submenu .el-menu-item{
+  background-color: $theme!important;
+}
+
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover{
+  color:$theme;
+}
+
+/*元素*/
+.el-button:focus, .el-button:hover{
+  background-color: $themeHover!important;
+}
+.el-button{
+  background-color:$theme!important;
+  border-color:$theme!important;
+}
+.btn-bg-color{
+  background-color:$theme!important; 
+}
+.btn-bd-color{
+  border-color:$theme!important;
+}
+.el-button.cancel-btn{
+  background-color:#ffffff!important;
+  border-color:#dcdfe6!important;
+  color: #4a4aa4;
+}
+.el-button.cancel-btn:focus, .el-button.cancel-btn:hover{
+  background-color:#ffffff!important;
+}
+
+/*.el-popper*/
+.el-popper{
+  // margin-top: 30px!important;
+}
+/*switch*/
+.el-switch.is-checked .el-switch__core {
+  border-color: $theme;
+  background-color:$theme;
+}
+
+.el-radio-button__inner:hover {
+  color:$theme;
+}
+
+.el-radio-button__orig-radio:checked+.el-radio-button__inner{
+  background-color: $theme;
+  border-color: $theme;
+  box-shadow: -1px 0 0 0 $theme;
+}
+
+.el-tabs__item.is-active{
+  color:$theme;
+}
+.el-tabs__item:hover{
+  color:$theme;
+}
+.el-tabs__active-bar{
+  background-color: $theme;
+}
+
+
+
+
+// 杭州开发ele样式
+
+// 1.Tabs
+.hz_ele_tabs{}
+
+.hz_ele_tabs .el-tabs__item{
+  line-height: 22px;
+}
+
+.hz_ele_tabs .el-tabs__header{
+  margin:0 0 20px;
+}
+
+
+// 2.form
+.hz_el_form .wid_box .el-input__inner{
+  width:300px;
+}
+.hz_el_form .el-input--suffix .el-input__inner{
+  width: 100px;
+}
+
+.hz_el_form .el-form-item{
+  margin-bottom:0
+}
+.hz_el_form .form_btn .el-form-item__content{
+  margin:0;
+}
+.hz_el_form .el-form-item .el-form-item__label{
+  padding-right:10px;
+}
+.hz_el_form .el-textarea .el-textarea__inner{
+  padding:15px;
+  font-size:18px;
+  line-height:25px;
+}
+.hz_el_radio .el-radio-button__orig-radio:checked + .el-radio-button__inner{
+  background:#ffffff;
+  color:#27BDC1;
+}
+
+.hz_el_table{}
+
+.hz_el_dialog .el-dialog{
+  min-width: 700px;
+  width:50%;
+}
+
+.hz_el_dialog .el-dialog__header{
+  padding:40px 30px;
+}
+.hz_el_dialog .el-dialog__body{
+  padding:0;
+}
+.hz_el_dialog .el-dialog__headerbtn{
+  top:40px;
+  right:30px;
+}
+.hz_el_dialog .el-textarea{
+  padding:0 30px 30px;
+}
+.hz_el_dialog .el-dialog__header .el-dialog__title{
+  font-weight: bold;
+}
+
+.el-hz-alert .el-alert__title{
+  color:#666666;
+  font-size:12px;
+}
